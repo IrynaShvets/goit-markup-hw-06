@@ -392,7 +392,7 @@
                 <strong class="subscribe-title">Подпишитесь на рассылку</strong>
                 <form class="form-subscribe">
                     <label for="user-email" class="subscribe-label">Email</label>
-                    <input type="email" name="email" id="user-email" placeholder="E-mail" autofocus class="subscribe-input" />
+                    <input type="email" name="email" id="user-email" placeholder="E-mail" class="subscribe-input" />
                 
                     <button type="submit" class="subscribe-button">Подписаться
                         <svg class="subscribe-icon" width="24" height="24">
@@ -414,40 +414,39 @@
             </button>
             
             <form class="form">
-                <h2>Оставьте свои данные, мы вам перезвоним</h2>
-                <div class="form-field">
-                    <label for="name">Имя</label>
-                    <svg class="" width="18" height="18">
+                <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                <div class="form-field field">
+                    <label for="name" class="form-label">Имя</label>
+                    <svg class="form-icon" width="18" height="18">
                              <use href="./images/sprite.svg#icon-person-black-18dp-1"></use>
-                        </svg>
-                    <input type="text" name="name" id="name" />
+                    </svg>
+                    <input type="text" name="name" id="name" class="form-input" />
                 </div>
-                <div class="form-field">
-                    <label for="tel">Телефон</label>
-                    <svg class="" width="18" height="18">
+                <div class="form-field field">
+                    <label for="tel" class="form-label">Телефон</label>
+                    <svg class="form-icon" width="18" height="18">
                         <use href="./images/sprite.svg#icon-phone-black-18dp-1"></use>
                     </svg>
-                    <input type="tel" name="phone_number" id="tel" />
+                    <input type="tel" name="phone_number" id="tel" class="form-input" />
                 </div>
-                <div class="form-field">
-                    <label for="mail">Почта</label>
-                    <svg class="" width="18" height="18">
+                <div class="form-field field">
+                    <label for="mail" class="form-label">Почта</label>
+                    <svg class="form-icon" width="18" height="18">
                         <use href="./images/sprite.svg#icon-email-black-18dp-1"></use>
                     </svg>
-                    <input type="email" name="mail" id="mail" />
+                    <input type="email" name="mail" id="mail" class="form-input" />
                 </div>
-                <div class="form-field">
-                    <label>
-                        Комментарий
-                        <textarea name="comment" rows="5" placeholder="Введите текст"></textarea>
-                    </label>
+                <div class="form-field field-comment">
+                    <label for="comment" class="form-label">Комментарий</label>
+                    <textarea name="comment" id="comment" rows="8" placeholder="Введите текст" class="form-textarea"></textarea>
                 </div>
-                <div class="form-field">
-
-                    <p>Соглашаюсь с рассылкой и принимаю</p><a href="">Условия договора</a>
+                <div class="distribution">
+                    <input type="checkbox" name="distribution" id="distribution" class="form-checkbox" />
+                    <label for="distribution">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label> 
                 </div>
-
-                <button type="submit" class="send-button">Отправить</button>
+                
+                    <button type="submit" class="send-button">Отправить</button>
+                
             </form>
         </div>
     </div>
