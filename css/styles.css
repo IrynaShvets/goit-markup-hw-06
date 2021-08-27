@@ -47,28 +47,27 @@ header {
 
 /* Навигация хедера */
 
-.header-container {
+.header {
   display: flex;
   align-items: center;
 }
 
-.nav-header {
+.header-nav {
   display: flex;
 }
 
-.navbar-links {
+.header-nav__navbar {
   display: flex;
   margin-left: 93px;
 }
 
-.navbar-logo {
+.header-nav__logo {
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
 }
 
-.footer-logo,
-.navbar-logo {
+.header-nav__logo {
   color: #000000;
   font-family: Raleway, sans-serif;
   text-decoration: none;
@@ -78,11 +77,11 @@ header {
   line-height: 1.19;
 }
 
-.nav-web {
+.header-nav__logo-color {
   color: var(--selection-color);
 }
 
-.navbar-link {
+.header-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -117,12 +116,12 @@ header {
 }
 
 .current,
-.navbar-list .navbar-link:hover,
-.navbar-list .navbar-link:focus {
+.header-nav__list .header-nav__link:hover,
+.header-nav__list .header-nav__link:focus {
   color: var(--selection-color);
 }
 
-.navbar-links .navbar-list + .navbar-list {
+.header-nav__navbar .header-nav__list + .header-nav__list {
   margin-left: 50px;
 }
 
@@ -689,8 +688,22 @@ img {
 .footer-studio {
   color: #ffffff;
 }
+
 .footer-address {
   width: 231px;
+}
+
+.footer-logo {
+  color: #000000;
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.footer__logo-color {
+  color: var(--selection-color);
 }
 .logo {
   margin-bottom: 20px;
